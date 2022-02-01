@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    {% block head %}
+    <title>BASE</title>
+    {% endblock %}
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="/static/common-css/bootstrap.css">
+	<link href="/static/common-css/ionicons.css" rel="stylesheet">
+	<link rel="stylesheet" href="/static/common-js/jquery.classycountdown.js" />	
+	<link href="/static/css/styles.css" rel="stylesheet">
+	<link href="/static/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<style type="text/css">
+
+body{
+    position: relative;
+    background: #5a4747;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #d04247, #5a4747);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #d04247, #5a4747); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+.content{
+          position: relative;
+          height: 100vh;
+        }
+
+.navbar-brand{
+  font-variant: petite-caps;
+  font-weight: 600;
+  font-size: 3.1rem;
+  color: #e4a530;
+
+
+</style>
+
+	<div  class="navbar-header" >
+		<a class="navbar-brand" href="/">SIMPLON-CI<span class="sub-title"></span></a>
+	</div>
+	
+	<div class="main-area-wrapper">
+
+		<div class="main-area center-text" >
+
+			{% block body %}
+			<h1>BASE TEMPLATE</h1>
+			{% endblock %}
+		</div><!-- main-area -->
+	</div><!-- main-area-wrapper -->
+	
+	<!-- SCIPTS -->
+	
+	<script src="/static/common-js/jquery-3.1.1.min.js"></script>
+	
+	<script src="/static/common-js/jquery.countdown.min.js"></script>
+	
+	<script src="/static/common-js/scripts.js"></script>
+	
+</body>
+</html>
